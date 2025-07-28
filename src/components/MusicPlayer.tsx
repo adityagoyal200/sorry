@@ -21,7 +21,7 @@ export default function MusicPlayer() {
           // Handle autoplay restrictions
           console.log('Audio autoplay blocked');
         });
-      }
+      }s
       setIsPlaying(!isPlaying);
     }
   };
@@ -43,8 +43,8 @@ export default function MusicPlayer() {
         preload="none"
       >
         {/* Using a gentle nature sound - you can replace with any ambient track */}
-        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav" />
-      </audio>
+        <source src="https://cdn.pixabay.com/audio/2023/03/30/audio_0ef98dc1cd.mp3" type="audio/mp3" />
+        </audio>
     </div>
   );
 }
