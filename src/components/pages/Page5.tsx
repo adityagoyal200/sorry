@@ -1,11 +1,13 @@
 import React from 'react';
 import { HeartHandshake, Moon, Power } from 'lucide-react';
 
+
 export default function Page5() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-night via-twilight to-black text-stone flex items-center justify-center p-8 animate-fade-in font-body">
       <div className="max-w-3xl mx-auto">
         <div className="bg-white/5 backdrop-blur-md rounded-3xl p-10 shadow-2xl border border-roseDust/10 relative overflow-hidden">
+
           {/* Icons */}
           <div className="absolute top-6 right-6">
             <Moon className="w-7 h-7 text-mutedPink animate-pulse" />
@@ -54,14 +56,25 @@ export default function Page5() {
             <p>
               If this is the chapter we turn slowly together, I’ll walk it with softness. If not, I’ll still hold your name like a poem I never stopped believing in.
             </p>
+
+            <div className="mt-8 flex justify-center">
+              <img
+                src="/chat-screenshot.jfif"
+                alt="Chat Screenshot"
+                className="rounded-xl shadow-lg border border-roseDust/10 max-w-full w-[80%]"
+              />
+            </div>
+            <p className="text-center text-mutedPink italic mt-2">
+              Can we fulfill this promise?.
+            </p>
           </div>
 
           {/* Footer icon */}
           <div className="text-center mt-10">
             <Power className="w-6 h-6 mx-auto text-mutedPink" />
             <p className="mt-2 text-mutedPink text-sm italic">
-              Page closed? Maybe. But the story's still breathing.
-              I LOVE YOu PLEASE FORGIVE ME!
+              Page closed? Maybe. But the story's still breathing.<br />
+              I LOVE YOU. PLEASE FORGIVE ME!
             </p>
           </div>
         </div>

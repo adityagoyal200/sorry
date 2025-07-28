@@ -31,7 +31,7 @@ export default function Page1() {
               <div className="space-y-6">
                 <p>
                   It didn’t begin with a plan. It wasn’t some cinematic moment. It was just late-night calls, inside jokes, and this feeling I couldn’t name. 
-                  I was always the guy who didn’t think much of connections through screens — until you.
+                  I was always the guy who didn’t think much of connections through screens until you.
                 </p>
 
                 <p>
