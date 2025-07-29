@@ -1,7 +1,6 @@
 import React from 'react';
 import { HeartHandshake, Moon, Power } from 'lucide-react';
 
-
 export default function Page5() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-night via-twilight to-black text-stone flex items-center justify-center p-8 animate-fade-in font-body">
@@ -54,7 +53,7 @@ export default function Page5() {
             </p>
 
             <p>
-              If this is the chapter we turn slowly together, I’ll walk it with softness. I Will Always Love you <3.
+              If this is the chapter we turn slowly together, I’ll walk it with softness. I Will Always Love you &lt;3.
             </p>
 
             <div className="mt-8 flex justify-center">
