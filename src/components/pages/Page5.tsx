@@ -54,7 +54,7 @@ export default function Page5() {
             </p>
 
             <p>
-              If this is the chapter we turn slowly together, I’ll walk it with softness. If not, I’ll still hold your name like a poem I never stopped believing in.
+              If this is the chapter we turn slowly together, I’ll walk it with softness. I Will Always Love you <3.
             </p>
 
             <div className="mt-8 flex justify-center">
