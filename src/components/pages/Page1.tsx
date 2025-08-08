@@ -38,12 +38,12 @@ export default function Page1() {
               <div className="space-y-6 animate-fade-up-delay">
                 <p>
                   It didn’t begin with a plan. It wasn’t some cinematic moment. It was just late-night calls, inside jokes, and this feeling I couldn’t name. 
-                  I was always the guy who didn’t think much of connections through screens — until you.
+                  I was always the guy who didn’t think much of connections through screens until you.
                 </p>
 
                 <p>
                   With you, Ana, it became the most natural part of my day. I’d wait to hear your voice. I’d know exactly what kind of mood you were in just 
-                  by how you said “Adiii.” You didn’t even have to explain — I’d just know.
+                  by how you said “Adiii.” You didn’t even have to explain I’d just know.
                 </p>
 
                 <p>
