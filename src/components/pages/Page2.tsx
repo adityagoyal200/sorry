@@ -1,80 +1,160 @@
 import React from 'react';
-import { CloudRain, Droplets } from 'lucide-react';
+import { MessageCircle, Heart, User } from 'lucide-react';
 
 export default function Page2() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-night via-twilight to-black text-roseDust flex items-center justify-center p-8 animate-fade-in font-sans">
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white/5 backdrop-blur-md rounded-3xl p-12 shadow-2xl border border-roseDust/10 relative overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center text-center px-6 relative overflow-hidden bg-gradient-to-br from-purple-600 via-pink-500 to-red-500 animate-gradient font-display text-white">
+      {/* Title */}
+      <h1 className="text-5xl md:text-6xl font-bold drop-shadow-[0_0_20px_#ec4899] animate-pulse mb-8">
+        First Time You Called Me Adi <Heart className="inline-block text-pink-200 animate-bounce" size={48} />
+      </h1>
 
-          {/* Icons */}
-          <div className="absolute top-6 right-6">
-            <CloudRain className="w-8 h-8 text-roseDust/40" />
+      {/* Real Chat Recreation */}
+      <div className="max-w-md w-full bg-gray-900/90 backdrop-blur-sm rounded-3xl overflow-hidden border border-pink-300/30 shadow-2xl">
+        {/* Chat Header */}
+        <div className="bg-gradient-to-r from-gray-800 to-gray-700 p-3 flex items-center justify-between">
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 bg-green-400 rounded-full flex items-center justify-center">
+              <span className="text-xs font-bold text-white">A</span>
+            </div>
+            <div className="text-left">
+              <h3 className="font-bold text-white text-sm">Ana</h3>
+            </div>
           </div>
-          <div className="absolute bottom-6 left-6">
-            <Droplets className="w-6 h-6 text-flamingo/50 animate-pulse" />
+          <div className="text-xs text-gray-400">You're Viewing Older Messages</div>
+        </div>
+
+        {/* Authentic Chat Messages */}
+        <div className="p-4 space-y-3 max-h-96 overflow-y-auto bg-gray-800">
+          {/* Ana: You feel better? */}
+          <div className="flex items-start space-x-2">
+            <div className="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="text-xs font-bold text-white">A</span>
+            </div>
+            <div className="flex flex-col">
+              <div className="text-xs text-gray-400 mb-1">Ana 27-04-2025 05:01</div>
+              <div className="bg-gray-700 text-white px-3 py-2 rounded-lg text-sm max-w-xs">
+                You feel better?
+              </div>
+            </div>
           </div>
 
-          {/* Heading */}
-          <div className="text-center mb-12">
-            <h1 className="text-5xl font-serif text-flamingo mb-4">🌧️ Chapter 2: “The Storm”</h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-flamingo to-roseDust mx-auto rounded-full"></div>
+          {/* AKari: Nope */}
+          <div className="flex items-start space-x-2">
+            <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="text-xs font-bold text-white">A</span>
+            </div>
+            <div className="flex flex-col">
+              <div className="text-xs text-gray-400 mb-1">AKari 27-04-2025 05:01</div>
+              <div className="bg-gray-700 text-white px-3 py-2 rounded-lg text-sm max-w-xs">
+                Nope
+              </div>
+            </div>
           </div>
 
-          {/* Body */}
-          <div className="prose prose-lg prose-invert max-w-none text-lilac leading-relaxed space-y-6">
-            <p className="text-xl font-light italic text-center mb-8 border-l-4 border-flamingo/30 pl-6">
-              "It’s different when the person you thought would understand… stops trying to."
-            </p>
+          {/* Ana: Adiiiiii with hearts */}
+          <div className="flex items-start space-x-2">
+            <div className="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="text-xs font-bold text-white">A</span>
+            </div>
+            <div className="flex flex-col">
+              <div className="text-xs text-gray-400 mb-1">Ana 27-04-2025 05:25</div>
+              <div className="bg-gray-700 text-white px-3 py-2 rounded-lg text-sm max-w-xs">
+                Adiiiiii
+              </div>
+              <div className="flex space-x-1 mt-1">
+                <span className="text-red-400 text-lg">❤️</span>
+                <span className="text-red-400 text-lg">❤️</span>
+                <span className="text-red-400 text-lg">❤️</span>
+              </div>
+            </div>
+          </div>
 
-            <div className="bg-white/5 p-8 rounded-2xl border-l-4 border-flamingo/30">
-              <div className="space-y-6">
-                <p>
-                  I kept showing up with answers when all you wanted was to be heard.  
-                  You weren’t asking me to fix you  you were asking me to stop adding to your weight.  
-                  And I didn’t hear that. Not fully. Not early enough.
-                </p>
+          {/* AKari: What happened ana */}
+          <div className="flex items-start space-x-2">
+            <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="text-xs font-bold text-white">A</span>
+            </div>
+            <div className="flex flex-col">
+              <div className="text-xs text-gray-400 mb-1">AKari 27-04-2025 07:52</div>
+              <div className="bg-gray-700 text-white px-3 py-2 rounded-lg text-sm max-w-xs">
+                What happened ana
+              </div>
+            </div>
+          </div>
 
-                <p>
-                  You were overwhelmed emotionally, mentally nd I still made it about “why aren’t you like before?”  
-                  I wasn’t looking at how much of you was running on empty, how long you were giving without being given to.
-                </p>
+          {/* Ana: Tequila 😂 */}
+          <div className="flex items-start space-x-2">
+            <div className="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="text-xs font-bold text-white">A</span>
+            </div>
+            <div className="flex flex-col">
+              <div className="text-xs text-gray-400 mb-1">Ana 27-04-2025 12:04</div>
+              <div className="bg-gray-700 text-white px-3 py-2 rounded-lg text-sm max-w-xs">
+                Tequila 😂
+              </div>
+            </div>
+          </div>
 
-                <p>
-                  You were still choosing me, even when you were tired of repeating yourself.  
-                  You were patient even when I made it unsafe for your honesty to breathe.
-                </p>
+          {/* AKari: Aaaa I get it because not everyone calls me adi */}
+          <div className="flex items-start space-x-2">
+            <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="text-xs font-bold text-white">A</span>
+            </div>
+            <div className="flex flex-col">
+              <div className="text-xs text-gray-400 mb-1">AKari 27-04-2025 12:50</div>
+              <div className="bg-gray-700 text-white px-3 py-2 rounded-lg text-sm max-w-xs">
+                Aaaa I get it because not everyone calls me adi
+              </div>
+              <div className="mt-1">
+                <span className="text-yellow-400 text-lg">😂</span>
+              </div>
+            </div>
+          </div>
 
-                <p>
-                  And I know what that does to a person. It makes them shut down.  
-                  Not because they don’t care but because caring starts to cost too much.
-                </p>
-
-                <p>
-                  <strong>I saw your strength and mistook it for stability.</strong>  
-                  But inside, you were breaking. Quietly. Repeatedly.  
-                  And I didn’t slow down to see it. I pushed when I should’ve paused.
-                </p>
-
-                <p>
-                  You deserved someone who saw the storm inside you and chose to be shelter, not wind.  
-                  I know I wasn’t that person. Not when you needed me most.
-                </p>
-
-                <div className="bg-white/10 p-6 rounded-xl border border-roseDust/10 mt-8">
-                  <p className="text-lg font-medium text-center text-pink-200">
-                    I'm not here to ask for forgiveness.  
-                    I'm here to finally understand the damage I caused without defending it.
-                  </p>
-                </div>
-
-                <p className="text-lg italic text-center text-lilac">
-                  "You didn’t fall apart, Ana you were held together by pieces you shouldn’t have had to carry alone."
-                </p>
+          {/* Ana: I will call you Adi - THE MOMENT */}
+          <div className="flex items-start space-x-2">
+            <div className="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center flex-shrink-0 animate-pulse">
+              <span className="text-xs font-bold text-white">A</span>
+            </div>
+            <div className="flex flex-col">
+              <div className="text-xs text-gray-400 mb-1">Ana 27-04-2025 13:04</div>
+              <div className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-3 py-2 rounded-lg text-sm max-w-xs border-2 border-yellow-300 shadow-lg animate-pulse">
+                <span className="font-bold">I will call you Adi</span>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Highlight section */}
+      <div className="mt-8 max-w-2xl bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-pink-300/30">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-yellow-200">
+          The Moment Everything Changed ✨
+        </h2>
+        <p className="text-lg md:text-xl font-body text-white/90 leading-relaxed italic">
+          "April 27th, 2025 at 13:04 - the exact moment Ana decided to call me 'Adi'. 
+          It wasn't just a nickname, it was the beginning of something special. 
+          From that day forward, I became 'Adi' to the person who mattered most."
+        </p>
+      </div>
+
+      {/* Floating hearts */}
+      <div className="absolute inset-0 pointer-events-none">
+        {['💕', '💖', '💗', '💝', '💘', '💞', '❤️'].map((heart, idx) => (
+          <span
+            key={idx}
+            className="absolute animate-float"
+            style={{
+              left: `${Math.random() * 90}%`,
+              top: `${Math.random() * 90}%`,
+              animationDuration: `${Math.random() * 20 + 15}s`,
+              fontSize: `${Math.random() * 1.5 + 1}rem`,
+            }}
+          >
+            {heart}
+          </span>
+        ))}
       </div>
     </div>
   );

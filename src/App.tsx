@@ -13,12 +13,12 @@ function App() {
   const [isUnlocked, setIsUnlocked] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  
+
   const totalPages = 5;
 
   const handlePageChange = (newPage: number) => {
     if (newPage === currentPage) return;
-    
+
     setIsTransitioning(true);
     setTimeout(() => {
       setCurrentPage(newPage);
@@ -49,15 +49,15 @@ function App() {
     <div className="relative">
       <BackgroundAnimation />
       <MusicPlayer />
-      
-      <div 
+
+      <div
         className={`transition-all duration-300 ${
           isTransitioning ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
         }`}
       >
         <CurrentPageComponent />
       </div>
-      
+
       <BookNavigation
         currentPage={currentPage}
         totalPages={totalPages}

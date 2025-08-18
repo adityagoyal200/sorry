@@ -1,82 +1,107 @@
 import React from 'react';
-import { HeartHandshake, Moon, Power } from 'lucide-react';
+import { Sunrise, Heart, Star, Sparkles } from 'lucide-react';
 
 export default function Page5() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-night via-twilight to-black text-stone flex items-center justify-center p-8 animate-fade-in font-body">
-      <div className="max-w-3xl mx-auto">
-        <div className="bg-white/5 backdrop-blur-md rounded-3xl p-10 shadow-2xl border border-roseDust/10 relative overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center text-center px-6 relative overflow-hidden bg-gradient-to-br from-amber-400 via-orange-300 to-pink-400 animate-gradient font-display text-white">
+      {/* Title */}
+      <h1 className="text-5xl md:text-6xl font-bold drop-shadow-[0_0_20px_#fbbf24] animate-pulse mb-8">
+        Rebuilding Together <Sunrise className="inline-block text-yellow-200 animate-bounce" size={48} />
+      </h1>
 
-          {/* Icons */}
-          <div className="absolute top-6 right-6">
-            <Moon className="w-7 h-7 text-mutedPink animate-pulse" />
-          </div>
-          <div className="absolute bottom-6 left-6">
-            <HeartHandshake className="w-6 h-6 text-flamingo animate-bounce" />
-          </div>
+      {/* Main content */}
+      <div className="max-w-4xl space-y-10">
+        {/* Opening message */}
+        <div className="bg-white/20 backdrop-blur-sm rounded-3xl p-8 border border-white/30">
+          <p className="text-xl md:text-2xl font-body text-white leading-relaxed mb-6">
+            After the storm comes the rainbow. After the darkness comes the dawn. 
+            And after falling apart, we found our way back to each other - 
+            stronger, wiser, and more in love than ever before.
+          </p>
+        </div>
 
-          {/* Title */}
-          <div className="text-center mb-10">
-            <h1 className="text-4xl font-display text-flamingo mb-2">🔚 Final Chapter: “Still, Always”</h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-roseDust to-lilac mx-auto rounded-full"></div>
-          </div>
-
-          {/* Content */}
-          <div className="prose prose-lg prose-invert max-w-none text-lilac leading-relaxed space-y-8">
-            <p className="text-center italic text-mutedPink">
-              "Still here. Still yours. Just without the noise this time."
-            </p>
-
-            <p>
-              I'm not stepping away to let go. I'm stepping back so you don’t feel pushed. Not because I want distance but because you deserve space that feels light and safe.
-            </p>
-
-            <p>
-              You’re still the first thought when I wake up and the one I carry quietly through every ordinary moment. No matter how heavy things got, that never changed. It won't.
-            </p>
-
-            <p>
-              I know you’ve been overwhelmed, tired, hurt. I made mistakes that tightened the weight instead of lifting it. But I never once stopped wanting to make you feel held not cornered.
-            </p>
-
-            <div className="bg-night p-6 rounded-xl border border-roseDust/20 text-center">
-              <p className="text-xl font-medium text-roseDust font-display">
-                I’m not asking for old love back. I’m asking to build something much better stronger, slower, safer, with more listening and less noise.
-              </p>
-              <p className="text-mutedPink italic mt-2">
-                No perfect promises. Just a steadier heart.
-              </p>
-            </div>
-
-            <p>
-              I’ll be here, your Adi. Living. Growing. Loving you quietly forever.
-            </p>
-
-            <p>
-              If this is the chapter we turn slowly together, I’ll walk it with softness. I Will Always Love you &lt;3.
-            </p>
-
-            <div className="mt-8 flex justify-center">
-              <img
-                src="/chat-screenshot.jfif"
-                alt="Chat Screenshot"
-                className="rounded-xl shadow-lg border border-roseDust/10 max-w-full w-[80%]"
-              />
-            </div>
-            <p className="text-center text-mutedPink italic mt-2">
-              Can we fulfill this promise?.
+        {/* Rebuilding journey */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-gradient-to-br from-yellow-400/30 to-orange-400/30 backdrop-blur-sm rounded-2xl p-6 border border-yellow-300/30 hover:scale-105 transition-transform duration-300">
+            <div className="text-4xl mb-4">🌅</div>
+            <h3 className="text-xl font-bold mb-3 text-yellow-100">New Beginnings</h3>
+            <p className="text-white/90 leading-relaxed">
+              We chose to start fresh, leaving behind the hurt and embracing 
+              the possibility of something even more beautiful.
             </p>
           </div>
 
-          {/* Footer icon */}
-          <div className="text-center mt-10">
-            <Power className="w-6 h-6 mx-auto text-mutedPink" />
-            <p className="mt-2 text-mutedPink text-sm italic">
-              Page closed? Maybe. But the story's still breathing.<br />
-              I LOVE YOU. PLEASE FORGIVE ME!
+          <div className="bg-gradient-to-br from-pink-400/30 to-red-400/30 backdrop-blur-sm rounded-2xl p-6 border border-pink-300/30 hover:scale-105 transition-transform duration-300">
+            <div className="text-4xl mb-4">💪</div>
+            <h3 className="text-xl font-bold mb-3 text-pink-100">Stronger Foundation</h3>
+            <p className="text-white/90 leading-relaxed">
+              Built on understanding, forgiveness, and the knowledge 
+              that love is a choice we make every single day.
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-br from-purple-400/30 to-blue-400/30 backdrop-blur-sm rounded-2xl p-6 border border-purple-300/30 hover:scale-105 transition-transform duration-300">
+            <div className="text-4xl mb-4">🌈</div>
+            <h3 className="text-xl font-bold mb-3 text-purple-100">Renewed Hope</h3>
+            <p className="text-white/90 leading-relaxed">
+              Every challenge became a stepping stone, every tear became 
+              a testament to how much we truly mean to each other.
             </p>
           </div>
         </div>
+
+        {/* Love declaration */}
+        <div className="bg-gradient-to-r from-rose-400/40 to-pink-400/40 backdrop-blur-sm rounded-3xl p-8 border border-rose-300/40">
+          <div className="flex justify-center mb-6">
+            {['💖', '✨', '💖', '✨', '💖'].map((icon, idx) => (
+              <span 
+                key={idx} 
+                className="text-3xl mx-2 animate-bounce" 
+                style={{ animationDelay: `${idx * 0.3}s` }}
+              >
+                {icon}
+              </span>
+            ))}
+          </div>
+          
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-yellow-100">
+            Our Love Story Continues...
+          </h2>
+          
+          <p className="text-lg md:text-xl font-body text-white/95 leading-relaxed italic">
+            "What we have now is not the same love we started with - it's deeper, 
+            more resilient, more real. We've seen each other at our worst and chosen 
+            to love anyway. We've fallen apart and rebuilt something even more beautiful. 
+            This is our forever, Ana and Adi, stronger together."
+          </p>
+        </div>
+
+        {/* Future together */}
+        <div className="text-center">
+          <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-yellow-400/30 to-pink-400/30 px-8 py-4 rounded-full border border-yellow-300/40">
+            <Heart className="text-red-300 animate-pulse" size={24} />
+            <span className="text-xl font-bold text-white">Forever & Always</span>
+            <Heart className="text-red-300 animate-pulse" size={24} />
+          </div>
+        </div>
+      </div>
+
+      {/* Floating celebration elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        {['🌟', '✨', '💫', '🎉', '🌈', '💕', '🦋', '🌸', '🌺', '💖'].map((icon, idx) => (
+          <span
+            key={idx}
+            className="absolute animate-float"
+            style={{
+              left: `${Math.random() * 90}%`,
+              top: `${Math.random() * 90}%`,
+              animationDuration: `${Math.random() * 25 + 20}s`,
+              fontSize: `${Math.random() * 1.8 + 1.2}rem`,
+            }}
+          >
+            {icon}
+          </span>
+        ))}
       </div>
     </div>
   );
